@@ -1,34 +1,159 @@
 {
-  "_note": "This file is overwritten by the Apotome provisioning service during site generation. Edit your live content from /admin.",
+  "_generated": "2026-08-24T22:44:34.284Z",
   "archetype": "keystone",
-  "brand": "Keystone Services",
-  "tagline": "Expert Service, Local Trust",
-  "blurb": "Professional services built on decades of community relationships.",
-  "theme": "earth",
-  "swatch": "default",
-  "variant": "classic",
+  "brand": "Willie's Welding",
+  "tagline": "Strong welds, solid solutions.",
+  "blurb": "Willie's Welding delivers expert fabrication, repair, and custom welding services for reliable, durable metalwork. We ensure your projects and equipment are built to last with precision and strength.",
+  "theme": "vibrant",
+  "swatch": "onyx-light",
+  "variant": "essentials",
   "contact": {
-    "address": "100 Commercial St, Trinidad, CO 81082",
-    "phone": "(719) 555-0400",
-    "email": "info@example.com",
+    "address": "123 Fake Street",
+    "phone": "9407651403",
+    "email": "zackleejohnston@gmail.com",
     "mapEmbedUrl": ""
   },
-  "hours": [
-    { "day": "Mon–Fri", "open": "8am – 5pm" },
-    { "day": "Saturday", "open": "9am – 2pm" },
-    { "day": "Sunday", "open": "Closed" }
+  "story": {
+    "title": "Willie's Welding",
+    "paragraphs": [
+      "Willie's Welding began with a simple idea: to do quality work that lasts. For years, I honed my skills out of a sheer passion for fabrication and the satisfaction of seeing durable, precise results. That dedication soon turned into Willie's Welding, a business built on honesty, craftsmanship, and a commitment to serving our community right. We're proud to put our expertise to work on every project, ensuring you get strong, reliable welding solutions you can depend on.",
+      ""
+    ],
+    "facts": [
+      {
+        "label": "Founded",
+        "value": "2019"
+      },
+      {
+        "label": "Summoned",
+        "value": "2021"
+      },
+      {
+        "label": "",
+        "value": ""
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "quote": "Amazing!",
+      "author": "Dave R. ",
+      "source": "Somewhere in CO"
+    },
+    {
+      "quote": "I need this everyday!",
+      "author": "Marty T.",
+      "source": "allegedly still there"
+    },
+    {
+      "quote": "I love Big Momma!",
+      "author": "Kevin B. ",
+      "source": "reformed"
+    }
+  ],
+  "social": [
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/choppermountain/"
+    },
+    {
+      "label": "Facebook",
+      "href": ""
+    }
   ],
   "photos": {
-    "hero": { "src": "/images/hero.jpg", "alt": "Business exterior" },
-    "about": { "src": "/images/about.jpg", "alt": "Team at work" },
-    "gallery": []
+    "hero": {
+      "src": "/photos/hero.jpg",
+      "alt": "",
+      "caption": ""
+    },
+    "about": {
+      "src": "/photos/about.jpg",
+      "alt": "",
+      "caption": ""
+    },
+    "gallery": [
+      {
+        "src": "/photos/gallery-01.jpg",
+        "alt": "",
+        "caption": ""
+      },
+      {
+        "src": "/photos/gallery-02.jpg",
+        "alt": "",
+        "caption": ""
+      },
+      {
+        "src": "/photos/gallery-03.jpg",
+        "alt": "",
+        "caption": ""
+      },
+      {
+        "src": "/photos/gallery-04.jpg",
+        "alt": "",
+        "caption": ""
+      },
+      {
+        "src": "/photos/gallery-05.jpg",
+        "alt": "",
+        "caption": ""
+      },
+      {
+        "src": "/photos/gallery-06.jpg",
+        "alt": "",
+        "caption": ""
+      },
+      {
+        "src": "/photos/gallery-07.jpg",
+        "alt": "",
+        "caption": ""
+      },
+      {
+        "src": "/photos/gallery-08.jpg",
+        "alt": "",
+        "caption": ""
+      }
+    ]
   },
-  "story": {
-    "title": "Our Story",
-    "paragraphs": ["Serving our community with expertise and integrity."],
-    "facts": []
-  },
-  "services": [],
-  "testimonials": [],
-  "social": []
+  "emergencyAvailable": false,
+  "services": [
+    {
+      "name": "Mig",
+      "description": "Mig welding delivers robust, lasting strength, ensuring your metal projects are built to perform reliably and endure.",
+      "price": "Starting at $250 an hour",
+      "icon": "AlertTriangle"
+    },
+    {
+      "name": "Tig",
+      "description": "Achieve unmatched durability and a pristine finish with Willie's Welding's expert TIG service, starting at $250 an hour.",
+      "price": "Starting at $250 an hour",
+      "icon": "Airplay"
+    },
+    {
+      "name": "",
+      "description": "",
+      "price": "",
+      "icon": "🛠"
+    },
+    {
+      "name": "",
+      "description": "",
+      "price": "",
+      "icon": "⚡"
+    }
+  ],
+  "capabilities": [
+    {
+      "label": "Years in business",
+      "value": ""
+    },
+    {
+      "label": "Service radius",
+      "value": ""
+    },
+    {
+      "label": "Licensed & insured",
+      "value": ""
+    }
+  ]
 }
