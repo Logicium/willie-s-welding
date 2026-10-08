@@ -16,6 +16,15 @@ import TestimonialsSection from '@apotome/archetype-shared/components/sections/T
 const { variant: liveVariant } = useSiteTheme()
 const isPortfolio = computed(() => variantAtLeast(liveVariant.value, 'portfolio'))
 const content = useSiteContentStore()
+
+/** Hero ledger: trades, town, service radius. */
+const heroMeta = computed(() => {
+  const city = siteConfig.contact.address.split(',').slice(1, 3).map(s => s.trim()).join(', ')
+  const items: Array<{ label: string; value?: string }> = [{ label: siteConfig.tagline }]
+  if (city) items.push({ label: city })
+  items.push({ label: 'Est.', value: siteConfig.story.facts?.find(f => f.label === 'Founded')?.value ?? '' })
+  return items.filter(i => i.value !== '')
+})
 const reviewItems = computed(() =>
   content.reviewsSource === 'google' && content.googleReviews.length
     ? content.googleReviews
@@ -33,7 +42,9 @@ const reviewItems = computed(() =>
     :images="isPortfolio ? [siteConfig.photos.hero, ...siteConfig.photos.gallery.slice(0, 3)] : []"
     :cta-primary="{ label: siteConfig.sections.hero.ctaPrimary, to: '/services' }"
     :cta-secondary="{ label: siteConfig.sections.hero.ctaSecondary, to: '/contact' }"
-    layout="split"
+    :meta="heroMeta"
+    :caption="siteConfig.photos.hero.alt"
+    :layout="isPortfolio ? 'stage' : 'split'"
   />
 
   <DispatchBar
